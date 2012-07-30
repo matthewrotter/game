@@ -1,0 +1,206 @@
+
+body {
+    border-top: 10px solid #333333;
+    font-family: "Helvetica Neue",Arial,Helvetica;
+    font-weight: 300;
+    margin: 0;
+}
+code, pre {
+    font-family: Menlo,Monaco,"Andale Mono",monospace;
+}
+h1 {
+    font-weight: bold;
+}
+h1 span {
+    color: #666666;
+    font-weight: 300;
+}
+pre {
+    background: none repeat scroll 0 0 #F7F7F7;
+    font-size: 10pt;
+    margin-bottom: 50px;
+    padding: 5px 10px;
+}
+.container {
+    margin: 50px auto;
+    width: 960px;
+}
+a {
+    color: #666666;
+    text-decoration: none;
+}
+a:hover {
+    color: #999999;
+}
+.nav {
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #333333;
+    font-size: 10pt;
+    height: 28px;
+}
+.nav ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    width: 960px;
+}
+.nav li {
+    float: left;
+    padding: 5px 16px;
+}
+.nav li.active {
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 4px 16px 7px;
+}
+.nav li.active a {
+    color: #FFFFFF;
+}
+.box-1 {
+    border: 30px solid #999999;
+    height: 100px;
+    width: 100px;
+}
+.box-2 {
+    border-color: #CC6666 #CCCC66 #66CC66 #6666CC;
+    border-style: solid;
+    border-width: 30px;
+    height: 100px;
+    width: 100px;
+}
+.box-3 {
+    border-color: #CC6666 #CCCC66 #66CC66 #6666CC;
+    border-style: solid;
+    border-width: 30px;
+    width: 0;
+}
+.box-4 {
+    border-bottom: 30px solid #66CC66;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    width: 0;
+}
+.box-5 {
+    border-bottom: 30px solid #66CC66;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    width: 0;
+}
+.box-6 {
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-top: 30px solid #66CC66;
+    width: 0;
+}
+.box-7 {
+    background-color: #66CC66;
+    height: 60px;
+    width: 104px;
+}
+.box-8 {
+    border-bottom: 52px solid transparent;
+    border-right: 30px solid #66CC66;
+    border-top: 52px solid transparent;
+    float: left;
+}
+.box-10 {
+    border-bottom: 52px solid transparent;
+    border-left: 30px solid #66CC66;
+    border-top: 52px solid transparent;
+    float: left;
+}
+.box-9 {
+    background-color: #66CC66;
+    float: left;
+    height: 104px;
+    width: 60px;
+}
+.hex {
+    float: left;
+    margin-bottom: -26px;
+    margin-left: 3px;
+}
+.hex .top {
+    border-bottom: 30px solid #66CC66;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    width: 0;
+}
+.hex .middle {
+    background: none repeat scroll 0 0 #66CC66;
+    height: 60px;
+    width: 104px;
+}
+.hex .bottom {
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-top: 30px solid #66CC66;
+    width: 0;
+}
+.hex-row {
+    clear: left;
+}
+.hex-row.even {
+    margin-left: 53px;
+}
+.hex2 {
+    float: left;
+    margin-bottom: -50px;
+    margin-right: -26px;
+}
+.hex2 .left {
+    border-bottom: 52px solid transparent;
+    border-right: 30px solid #66CC66;
+    border-top: 52px solid transparent;
+    float: left;
+    width: 0;
+}
+.hex2 .middle {
+    background: none repeat scroll 0 0 #66CC66;
+    float: left;
+    height: 104px;
+    width: 60px;
+}
+.hex2 .right {
+    border-bottom: 52px solid transparent;
+    border-left: 30px solid #66CC66;
+    border-top: 52px solid transparent;
+    float: left;
+    width: 0;
+}
+.hex2-row {
+    clear: left;
+}
+.hex2.even {
+    margin-top: 53px;
+}
+.board {
+    -moz-transform: perspective(600px) rotateX(60deg);
+}
+.hex3:before {
+    border-bottom: 30px solid #66CC66;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: -30px;
+    width: 0;
+}
+.hex3 {
+    background-color: #66CC66;
+    height: 60px;
+    margin-top: 30px;
+    position: relative;
+    width: 104px;
+}
+.hex3:after {
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-top: 30px solid #66CC66;
+    bottom: -30px;
+    content: "";
+    position: absolute;
+    width: 0;
+}
+
