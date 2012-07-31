@@ -21,6 +21,11 @@ function(app, $, _, Backbone, tmpl) {
 
     template: _.template(tmpl),
 
+    events: {
+      'mouseover .grid .middle' : 'hover',
+      'mouseout .grid .middle' : 'unhover'
+    },
+
     initialize: function() {
       // this.model.on('change', this.render, this);
     },
@@ -29,6 +34,20 @@ function(app, $, _, Backbone, tmpl) {
       // this.$el.html(this.template(this.model.toJSON()));
       this.$el.html(this.template());
       return this;
+    },
+
+    hover: function(e) {
+      console.log( $(e.target));
+      // $(e.target).css('border', '1px solid yellow');
+      $(e.target).addClass('highlight');
+      $(e.target).text('howdy');
+    },
+
+
+    unhover: function(e) {
+      console.log( $(e.target));
+      $(e.target).removeClass('highlight');
+      $(e.target).text('');
     }
   });
 
