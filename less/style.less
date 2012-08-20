@@ -16,13 +16,17 @@ body {
   position: relative;
 }
 .oval {
+  .transition(all 0.04s ease-in-out);
   width: 200px;
   height: 100px;
-  background: red;
   .border-radius(50%);
   float: left;
   margin-bottom: -8px;
   margin-right: 5px;
+  border: 1px solid black;
+}
+.oval:hover {
+  .box-shadow(0 0 15px rgba(0, 0, 255, 1));
 }
 .oval-row.even, .oval-row.odd {
   clear: left;
@@ -30,6 +34,7 @@ body {
 .oval-row.odd {
   margin-left: 100px;  
 }
+
 
 
 
