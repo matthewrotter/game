@@ -4,19 +4,19 @@ define([
   "lodash",
   "backbone",
 
-  "text!templates/start.html"
+  "text!templates/hex.html"
 ],
 
 function(app, $, _, Backbone, tmpl) {
 
-  var Start = app.module();
+  var Hex = app.module();
 
-  Start.initialize = function() {
-    var main = new Start.Views.Main();
+  Hex.initialize = function() {
+    var main = new Hex.Views.Main();
     $('#main').html(main.render().el);
   };
 
-  Start.Views.Main = Backbone.View.extend({
+  Hex.Views.Main = Backbone.View.extend({
     tagName: 'div',
 
     template: _.template(tmpl),
@@ -51,6 +51,6 @@ function(app, $, _, Backbone, tmpl) {
     }
   });
 
-  return Start;
+  return Hex;
 
 });

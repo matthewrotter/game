@@ -12,17 +12,29 @@ body {
    Author:
  ========================================================================== */
 
+.grid {
+  position: relative;
+}
+.oval {
+  width: 200px;
+  height: 100px;
+  background: red;
+  .border-radius(50%);
+  float: left;
+  margin-bottom: -8px;
+  margin-right: 5px;
+}
+.oval-row.even, .oval-row.odd {
+  clear: left;
+}
+.oval-row.odd {
+  margin-left: 100px;  
+}
 
-body {
-    margin: 0;
-    border-top: 10px solid #333;
-    font-family: "Helvetica Neue", Arial, Helvetica;
-    font-weight: 300;
-}
-.container {
-    width: 960px;
-    margin: 50px auto;
-}
+
+
+
+
 .hex {
     float: left;
     margin-left: 3px;
@@ -83,11 +95,7 @@ body {
     margin-top: 53px;
 }
 .board {
-    -webkit-transform: perspective(600px) rotateX(60deg);
-    -moz-transform: perspective(600px) rotateX(60deg);
-    -ms-transform: perspective(600px) rotateX(60deg);
-    -o-transform: perspective(600px) rotateX(60deg);
-    transform: perspective(600px) rotateX(60deg);
+  .perspective(600px, 50deg);
 }
 
 .highlight {

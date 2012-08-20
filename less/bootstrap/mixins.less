@@ -254,6 +254,13 @@
        -o-transform: translate(@x, @y, @z);
           transform: translate(@x, @y, @z);
 }
+.perspective(@x, @y) {
+  -webkit-transform: perspective(@x) rotateX(@y);
+     -moz-transform: perspective(@x) rotateX(@y);
+      -ms-transform: perspective(@x) rotateX(@y);
+       -o-transform: perspective(@x) rotateX(@y);
+          transform: perspective(@x) rotateX(@y);
+}
 
 // Backface visibility
 // Prevent browsers from flickering when using CSS 3D transforms.

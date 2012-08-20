@@ -2,19 +2,26 @@ define([
   // Application.
   "app",
 
-  "modules/start"
+  "modules/hex",
+  "modules/oval"
 ],
 
-function(app, Start) {
+function(app, Hex, Oval) {
 
   // Defining the application router, you can attach sub routers here.
   var Router = Backbone.Router.extend({
     routes: {
-      "": "index"
+      "": "index",
+      "!/oval": "index",
+      "!/hex": "hex",
     },
 
     index: function() {
-      Start.initialize();
+      Oval.initialize();
+    },
+
+    hex: function() {
+      Hex.initialize();
     }
   });
 

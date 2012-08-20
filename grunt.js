@@ -122,6 +122,11 @@ module.exports = function(grunt) {
       }
     },
 
+    watch: {
+      files: ['less/**/*.less'],
+      tasks: 'less'
+    },
+
     // This task uses James Burke's excellent r.js AMD build tool.  In the
     // future other builders may be contributed as drop-in alternatives.
     requirejs: {
